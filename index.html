@@ -4,69 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="cursor-trail"></div>
   <header class="site-header">
-    <div class="container">
-      <a href="#home" class="brand">Your Name</a>
+    <div class="container header-row">
       <nav class="nav">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero">
+    <section id="home" class="hero hero-landing">
       <div class="container hero-content">
-        <p class="eyebrow">Hello, I’m</p>
-        <h1>Your Name</h1>
-        <p class="hero-text">I build beautiful web experiences with HTML, CSS, and JavaScript. Welcome to my portfolio.</p>
-        <a href="#projects" class="btn-primary">View Work</a>
+        <div class="hero-copy">
+          <h1>Hi, I'm Danielle Franzes!</h1>
+          <p class="hero-subtitle">Visual Designer & Art Illustrator</p>
+          <p class="hero-support">Scroll down to see more</p>
+          <div class="hero-arrow" aria-hidden="true"><span></span></div>
+        </div>
       </div>
     </section>
 
     <section id="about" class="section about-section">
       <div class="container">
-        <h2>About Me</h2>
-        <p>I am a creative web developer with a passion for designing clean and engaging user experiences. I love turning ideas into polished websites that communicate clearly.</p>
+        <div class="section-heading">
+          <h2>About Me</h2>
+          <div class="section-copy">
+            <p>For five years, I led a creative studio, building visual systems, directing multidisciplinary teams, and translating abstract ideas into clear, tangible outcomes.</p>
+            <p>Over time, my focus shifted from how things look to how they work. I became increasingly drawn to systems — the logic behind interaction, behavior, and structure. That shift led me into interactive design and game systems, where mechanics, flow, and user behavior meet.</p>
+            <p>Today, I design system-first: structure, escalation, clarity, and intent. Whether it’s a brand, a product interface, or a game mechanic, I turn complexity into something precise and purposeful.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section projects-section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Project Title</h3>
-            <p>Brief description of a standout project, highlighting the goal and the technologies used.</p>
-          </article>
-          <article class="project-card">
-            <h3>Project Title</h3>
-            <p>Brief description of another project to show your skills and creative problem solving.</p>
-          </article>
-          <article class="project-card">
-            <h3>Project Title</h3>
-            <p>Describe another project or initiative that reflects your style and expertise.</p>
-          </article>
+      <div class="container projects-container">
+        <div class="projects-grid">
+          <a class="project-card" href="#contact">
+            <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Studio Work">
+            <div class="project-card-info">
+              <p class="project-card-title">Studio Work</p>
+              <p class="project-card-meta">Creative Lead</p>
+            </div>
+          </a>
+          <a class="project-card" href="#contact">
+            <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="UI / UX Systems">
+            <div class="project-card-info">
+              <p class="project-card-title">UI / UX Systems</p>
+              <p class="project-card-meta">Product Design</p>
+            </div>
+          </a>
+          <a class="project-card" href="#contact">
+            <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Narrative Design">
+            <div class="project-card-info">
+              <p class="project-card-title">Narrative Design</p>
+              <p class="project-card-meta">Storytelling + Layout</p>
+            </div>
+          </a>
+          <a class="project-card" href="#contact">
+            <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Game Flow">
+            <div class="project-card-info">
+              <p class="project-card-title">Game Flow</p>
+              <p class="project-card-meta">Systems & Interaction</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projects-group">
+          <p class="projects-group-label">Game Design</p>
+          <div class="projects-grid">
+            <a class="project-card" href="#contact">
+              <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Kerah">
+              <div class="project-card-info">
+                <p class="project-card-title">Kerah</p>
+                <p class="project-card-meta">Cooperative | Puzzle-Survival | 2 Players</p>
+              </div>
+            </a>
+            <a class="project-card" href="#contact">
+              <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="KIDA">
+              <div class="project-card-info">
+                <p class="project-card-title">KIDA</p>
+                <p class="project-card-meta">Character Design | Visual Development</p>
+              </div>
+            </a>
+            <a class="project-card" href="#contact">
+              <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Spelunky">
+              <div class="project-card-info">
+                <p class="project-card-title">Spelunky</p>
+                <p class="project-card-meta">Digital to Board</p>
+              </div>
+            </a>
+            <a class="project-card" href="#contact">
+              <img class="project-card-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='900'%3E%3Crect width='1200' height='900' fill='%23e8ecee'/%3E%3C/svg%3E" alt="Fiddler Crab">
+              <div class="project-card-info">
+                <p class="project-card-title">Fiddler Crab</p>
+                <p class="project-card-meta">Arcade | Risk-Reward | Single Player</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
       <div class="container">
-        <h2>Contact</h2>
-        <p>If you'd like to collaborate or learn more, send me a message.</p>
-        <a href="mailto:you@example.com" class="btn-secondary">Email Me</a>
+        <div class="contact-copy">
+          <p class="contact-email">danielle.franzes@gmail.com</p>
+          <p class="contact-phone">+972 52-846-4740</p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Your Name. Built with HTML, CSS, and JavaScript.</p>
+      <p>© 2026 Danielle Franzes. Built with HTML, CSS, and JavaScript.</p>
     </div>
   </footer>
 
